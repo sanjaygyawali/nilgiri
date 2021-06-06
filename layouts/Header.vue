@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="relative bg-white">
-      <div class="mx-auto md:block sm:hidden">
+    <div class="relative">
+      <div class="mx-auto md:block ">
         <div
-          class="flex items-center border-b border-gray-400 py-2 md:space-x-10 px-12"
+          class="flex items-center border-b border-gray-400 py-2 md:space-x-10 px-12 web-nav"
         >
           <div class="flex justify-start items-center md:space-x-10">
             <nuxt-link to="/">
@@ -14,8 +14,13 @@
                 alt
               />
             </nuxt-link>
-            <div v-for="(menu, index) in menus" :key="index">
-              <div>
+            <div class="xs:hidden" v-for="(menu, index) in menus" :key="index">
+              <drop-down
+                v-if="menu.submenus"
+                :subMenus="menu.submenus"
+                v-bind="menu"
+              ></drop-down>
+              <div v-else>
                 <nuxt-link :to="menu.to">
                   <span class="uppercase font-medium text-gray-700">{{
                     menu.title
@@ -24,6 +29,12 @@
               </div>
             </div>
           </div>
+
+          <!-- <div class="md:flex items-center justify-end md:flex-1 lg:w-0">
+            <nuxt-link to="/wallpapers">
+              <span class="uppercase font-medium text-gray-700">Wallpapers</span>
+            </nuxt-link>
+          </div>-->
         </div>
       </div>
 
@@ -72,7 +83,7 @@
               <div v-for="(menu, index) in menus" :key="index">
                 <drop-down
                   class="mb-6"
-                  v-if="menu.submenus.length > 0"
+                  v-if="menu.submenus"
                   :subMenus="menu.submenus"
                   v-bind="menu"
                 ></drop-down>
@@ -89,9 +100,6 @@
 </template>
 
 <script>
-import DropDown from "../components/DropDown";
-import SubMenu from "../components/SubMenu";
-
 export default {
   data() {
     return {
@@ -99,38 +107,34 @@ export default {
       menus: [
         {
           id: 1,
-          title: "Home",
+          title: "Platforms",
           to: "platform"
         },
 
         {
           id: 2,
-          title: "About Us",
+          title: "Applications",
           to: ""
         },
         {
           id: 3,
-          title: "What we Offer",
+          title: "About",
           to: "/about"
         },
         {
           id: 4,
-          title: "Contact Us",
+          title: "Wallpapers",
           to: "/wallpapers"
         },
 
         {
           id: 4,
-          title: "Get To Know More",
+          title: "Contact",
           to: ""
         }
       ],
       showMobileMenu: false
     };
-  },
-  components: {
-    DropDown,
-    SubMenu
   },
   methods: {
     closeMobileMenu() {
@@ -140,4 +144,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+// .web-nav {
+//   display: block;
+// }
+// @media only screen and (max-width: 380px) {
+//   .web-nav {
+//     display: none;
+//   }
+// }
+</style>
