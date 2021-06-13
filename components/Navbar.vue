@@ -2,7 +2,7 @@
   <div class="static top-0">
     <div class="mx-auto my-1 md:block ">
       <div
-        class="flex items-center justify-between border-gray-400 py-2 md:space-x-10 px-12 web-nav"
+        class="flex items-center justify-between border-gray-400 py-2 md:space-x-4 px-4 web-nav"
       >
         <div>
           <nuxt-link to="/">
@@ -14,7 +14,7 @@
             />
           </nuxt-link>
         </div>
-        <div class="flex justify-between items-center md:space-x-10">
+        <div class="flex items-center md:space-x-4">
           <div class="xs:hidden" v-for="(menu, index) in menus" :key="index">
             <drop-down
               v-if="menu.submenus"

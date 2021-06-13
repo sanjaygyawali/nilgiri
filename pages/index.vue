@@ -1,19 +1,25 @@
 <template>
   <div class="relative">
-    <navbar></navbar>
     <banner></banner>
     <div class="fixed-width">
       <about-us></about-us>
+      <amenities></amenities>
+      <places></places>
+      <gallery></gallery>
+      <contact-us></contact-us>
     </div>
   </div>
 </template>
 
 <script>
+import ContactUs from "../components/ContactUs.vue";
 export default {};
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
+/* S
+Gal
+ContactUsleryample `apply` at-rules with Tailwind CSS
 .container {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
