@@ -19,23 +19,29 @@ export default {
 </script>
 <style lang="scss">
 .banner {
-  height: 500px;
+  height: calc(100vh - 150px);
   //   background-image: url("assets/image/landing-img.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  // background-image: linear-gradient(
+  //     to bottom,
+  //     rgba(5, 119, 119, 0.85),
+  //     rgba(165, 53, 137, 0)
+  //   ),
+  //   url("assets/image/welcome-img2.jpeg");
   background-image: linear-gradient(
       to bottom,
-      rgba(1, 30, 43, 0.95),
+      rgba(5, 87, 119, 0.85),
       rgba(165, 53, 137, 0)
     ),
-    url("assets/image/landing-img.jpeg");
+    url("assets/image/welcome-img2.jpeg");
 }
 .main-logo {
   width: 100%;
   text-align: center;
   width: auto;
-  height: calc(500px - 50px);
+  height: calc(100vh - 100px);
   img {
     width: 300px;
     margin: 0 auto;

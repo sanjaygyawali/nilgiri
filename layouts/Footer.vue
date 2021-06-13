@@ -30,31 +30,14 @@
             <h1
               class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font"
             >
-              Product
+              Places to explore
             </h1>
             <nav class="mb-10 space-y-4 list-none">
-              <li>
-                <a
+              <li v-for="place in places" :key="place.id">
+                <nuxt-link
+                  to="/"
                   class=" mr-1 text-sm text-blueGray-500 transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-                  >Email Templates</a
-                >
-              </li>
-              <li>
-                <a
-                  class=" mr-1 text-sm text-blueGray-500 transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-                  >Web Templates</a
-                >
-              </li>
-              <li>
-                <a
-                  class=" mr-1 text-sm text-blueGray-500 transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-                  >Figma Files</a
-                >
-              </li>
-              <li>
-                <a
-                  class=" mr-1 text-sm text-blueGray-500 transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-                  >Sketch Files</a
+                  >{{ place.name }}</nuxt-link
                 >
               </li>
             </nav>
@@ -63,31 +46,14 @@
             <h1
               class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font"
             >
-              Company
+              Quick Links
             </h1>
             <nav class="mb-10 space-y-4 list-none">
-              <li>
-                <a
+              <li v-for="link in links" :key="link.id">
+                <nuxt-link
+                  to="/"
                   class=" mr-1 text-sm text-blueGray-500 transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  class=" mr-1 text-sm text-blueGray-500 transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  class=" mr-1 text-sm text-blueGray-500 transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-                  >Carriers</a
-                >
-              </li>
-              <li>
-                <a
-                  class=" mr-1 text-sm text-blueGray-500 transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-                  >Pricing</a
+                  >{{ link.name }}</nuxt-link
                 >
               </li>
             </nav>
@@ -203,5 +169,64 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      places: [
+        {
+          id: 1,
+          name: "Place One",
+          link: "#"
+        },
+        {
+          id: 2,
+          name: "Place Two",
+          link: "#"
+        },
+        {
+          id: 3,
+          name: "Place Three",
+          link: "#"
+        },
+        {
+          id: 4,
+          name: "Place Four",
+          link: "#"
+        }
+      ],
+      links: [
+        {
+          id: 1,
+          name: "Home",
+          link: "#"
+        },
+        {
+          id: 2,
+          name: "About Us",
+          link: "#"
+        },
+        {
+          id: 3,
+          name: "Amenities",
+          link: "#"
+        },
+        {
+          id: 4,
+          name: "Services",
+          link: "#"
+        },
+        {
+          id: 5,
+          name: "Gallery",
+          link: "#"
+        },
+        {
+          id: 6,
+          name: "Contact Us",
+          link: "#"
+        }
+      ]
+    };
+  }
+};
 </script>

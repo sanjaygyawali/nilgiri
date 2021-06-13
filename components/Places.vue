@@ -18,154 +18,31 @@
         <p
           class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"
         >
-          Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-          taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
-          pug.
+          With the calm and comfortable stay we offer you the beautiful nearby
+          places where you can perfectly fit into nature.
         </p>
       </div>
       <div class="flex flex-wrap -m-4">
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <div
+          class="lg:w-1/4 md:w-1/2 p-4 w-full"
+          v-for="place in places"
+          :key="place.id"
+        >
           <a class="block relative h-48 rounded overflow-hidden">
             <img
               alt="ecommerce"
               class="object-cover object-center w-full h-full block"
-              src="~/assets/image/about-3.jpeg"
+              :src="place.image"
             />
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
+              {{ place.attraction }}
             </h3>
             <h2 class="text-gray-900 title-font text-lg font-medium">
-              The Catalyzer
+              {{ place.name }}
             </h2>
-            <p class="mt-1">$16.00</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img
-              alt="ecommerce"
-              class="object-cover object-center w-full h-full block"
-              src="~/assets/image/about-3.jpeg"
-            />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-gray-900 title-font text-lg font-medium">
-              Shooting Stars
-            </h2>
-            <p class="mt-1">$21.15</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img
-              alt="ecommerce"
-              class="object-cover object-center w-full h-full block"
-              src="~/assets/image/about-3.jpeg"
-            />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-gray-900 title-font text-lg font-medium">
-              Neptune
-            </h2>
-            <p class="mt-1">$12.00</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img
-              alt="ecommerce"
-              class="object-cover object-center w-full h-full block"
-              src="~/assets/image/about-3.jpeg"
-            />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-gray-900 title-font text-lg font-medium">
-              The 400 Blows
-            </h2>
-            <p class="mt-1">$18.40</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img
-              alt="ecommerce"
-              class="object-cover object-center w-full h-full block"
-              src="~/assets/image/about-3.jpeg"
-            />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-gray-900 title-font text-lg font-medium">
-              The Catalyzer
-            </h2>
-            <p class="mt-1">$16.00</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img
-              alt="ecommerce"
-              class="object-cover object-center w-full h-full block"
-              src="~/assets/image/about-3.jpeg"
-            />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-gray-900 title-font text-lg font-medium">
-              Shooting Stars
-            </h2>
-            <p class="mt-1">$21.15</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img
-              alt="ecommerce"
-              class="object-cover object-center w-full h-full block"
-              src="~/assets/image/about-3.jpeg"
-            />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-gray-900 title-font text-lg font-medium">
-              Neptune
-            </h2>
-            <p class="mt-1">$12.00</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img
-              alt="ecommerce"
-              class="object-cover object-center w-full h-full block"
-              src="~/assets/image/about-3.jpeg"
-            />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-gray-900 title-font text-lg font-medium">
-              The 400 Blows
-            </h2>
-            <p class="mt-1">$18.40</p>
+            <p class="mt-1">{{ place.distance }}</p>
           </div>
         </div>
       </div>
@@ -174,5 +51,54 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      places: [
+        {
+          id: 1,
+          name: "Place One",
+          distance: "1KM",
+          attraction: "Something",
+          image: require("/assets/image/about-3.jpeg")
+        },
+        {
+          id: 2,
+          name: "Place One",
+          distance: "1KM",
+          attraction: "Something",
+          image: require("/assets/image/about-1.jpeg")
+        },
+        {
+          id: 3,
+          name: "Place One",
+          distance: "1KM",
+          attraction: "Something",
+          image: require("/assets/image/about-3.jpeg")
+        },
+        {
+          id: 4,
+          name: "Place One",
+          distance: "1KM",
+          attraction: "Something",
+          image: require("/assets/image/about-2.jpeg")
+        },
+        {
+          id: 5,
+          name: "Place One",
+          distance: "1KM",
+          attraction: "Something",
+          image: require("/assets/image/about-1.jpeg")
+        },
+        {
+          id: 6,
+          name: "Place One",
+          distance: "1KM",
+          attraction: "Something",
+          image: require("/assets/image/about-3.jpeg")
+        }
+      ]
+    };
+  }
+};
 </script>

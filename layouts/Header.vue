@@ -2,7 +2,7 @@
   <div class="static top-0">
     <div class="mx-auto my-1 md:block ">
       <div
-        class="flex items-center justify-between border-gray-400 py-2 md:space-x-10 px-12 web-nav"
+        class="flex items-center justify-between border-gray-400 py-4 md:space-x-10 px-12 web-nav"
       >
         <div>
           <nuxt-link to="/">
