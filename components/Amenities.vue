@@ -31,7 +31,8 @@
           <div
             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0"
           >
-            <svg
+            <raw-svg icon="bed"></raw-svg>
+            <!-- <svg
               fill="none"
               stroke="currentColor"
               stroke-linecap="round"
@@ -40,8 +41,8 @@
               class="w-10 h-10"
               viewBox="0 0 24 24"
             >
-              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-            </svg>
+              <path d="M23 12h-1080l-3 999L9 3l-3 9H2"></path>
+            </svg> -->
           </div>
           <div class="flex-grow">
             <h2 class="text-gray-900 text-lg title-font font-medium mb-2">

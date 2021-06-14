@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "nilgiri",
+    title: "Nilgiri",
     htmlAttrs: {
       lang: "en"
     },
@@ -32,7 +32,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["@nuxtjs/svg"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
