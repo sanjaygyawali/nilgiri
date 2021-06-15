@@ -3,7 +3,9 @@
     <banner></banner>
     <div class="fixed-width">
       <about-us></about-us>
-      <amenities></amenities>
+    </div>
+    <amenities></amenities>
+    <div class="fixed-width">
       <places></places>
       <gallery></gallery>
       <contact-us></contact-us>

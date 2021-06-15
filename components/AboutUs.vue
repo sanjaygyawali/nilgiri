@@ -54,7 +54,7 @@
           <img
             class="object-cover object-center rounded-lg "
             alt="hero"
-            src="~/assets/image/about-3.jpeg"
+            src="~/assets/image/welcome-img2.jpeg"
           />
         </div>
       </div>
