@@ -1,15 +1,23 @@
 <template>
   <div>
+    <!-- <TopBar></TopBar> -->
     <Header></Header>
     <Nuxt />
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import TopBar from "./TopBar";
+
 import Header from "./Header";
+import Footer from "./Footer";
+
 export default {
   components: {
-    Header
+    TopBar,
+    Header,
+    Footer
   }
 };
 </script>
