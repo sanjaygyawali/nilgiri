@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.fixed-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  span {
+    border-bottom: 4px solid #f38a07;
+    padding-bottom: 15px;
+  }
+}
+.font-title {
+  // font-family: "Roboto";
+}
