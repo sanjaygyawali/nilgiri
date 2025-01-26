@@ -2,7 +2,7 @@
   <div class="about-us py-10">
     <section class="text-blueGray-700">
       <div
-        class="container flex flex-col items-center py-16 mx-auto md:flex-row lg:px-8"
+        class="container flex flex-col items-center py-16 mx-auto md:flex-row px-6 lg:px-8"
       >
         <div
           class="flex flex-col items-start mb-16 text-left lg:flex-grow md:w-1/2 lg:pr-24 md:pr-8 md:mb-0"

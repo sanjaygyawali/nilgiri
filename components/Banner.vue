@@ -46,9 +46,10 @@ import { contactUs } from "~/store/contents";
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top; // Changed from 'bottom' to 'center'
+  // background-image: url("/images/gallery/nilgiri-front.jpg");
   background-image: linear-gradient(
       to bottom,
-      rgba(5, 87, 119, 0.85),
+      rgba(155, 189, 208, 0.85),
       rgba(165, 53, 137, 0)
     ),
     url("/images/gallery/nilgiri-front.jpg");
