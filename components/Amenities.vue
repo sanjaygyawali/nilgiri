@@ -18,9 +18,7 @@
         </p>
       </div>
 
-      <div
-        class="grid gap-4 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-      >
+      <div class="grid gap-4 sm:gap-8 grid-cols-3 lg:grid-cols-3">
         <div
           v-for="amenity in ameneties"
           :key="amenity.name"
@@ -34,7 +32,7 @@
               class="w-6 h-6 sm:w-8 sm:h-8 text-blue-500"
             />
           </div>
-          <h2 class="mb-2 text-lg sm:text-xl font-semibold text-gray-900">
+          <h2 class="mb-2 text-sm sm:text-xl font-semibold text-gray-900">
             {{ amenity.name }}
           </h2>
           <!-- <p class="text-sm sm:text-base text-gray-600">
